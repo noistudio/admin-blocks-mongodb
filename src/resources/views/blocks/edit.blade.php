@@ -44,7 +44,7 @@
                     <select class="form-control" name="position_id" required >
                         @if(count($positions))
                             @foreach($positions as $position)
-                                <option @if($block->position_id==$position->id) selected @endif value="{{ $position->id }}">{{ $position->name }}</option>
+                                <option @if($block->position->_id==$position->_id) selected @endif value="{{ $position->id }}">{{ $position->name }}</option>
                             @endforeach
                         @endif
                     </select>
